@@ -10,4 +10,9 @@ class PokemonRepository {
         val response = pokemonService.getPokemonSpecies()
         return if (response.isSuccessful) response.body() else null
     }
+
+    suspend fun getOne(id: String): PokemonDetail? {
+        val response = pokemonService.getOnePokemonSpecies(id)
+        return if (response.isSuccessful) response.body() else null
+    }
 }

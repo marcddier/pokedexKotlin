@@ -51,7 +51,7 @@ class PokemonListFragment : Fragment() {
     override fun onResume() {
         super.onResume()
 
-        viewModel.loadPokemon()
+        viewModel.loadPokemonList()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
